@@ -68,172 +68,160 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 
+# Data report overview
 The dataset examined has the following dimensions:
+
 
 ---------------------------------
 Feature                    Result
 ------------------------ --------
 Number of observations        180
 
-Number of variables            75
+Number of variables            68
 ---------------------------------
 
 # Codebook summary table
 
----------------------------------------------------------------------------------------------------
-Label   Variable                                     Class         # unique  Missing  Description  
-                                                                     values                        
-------- -------------------------------------------- ----------- ---------- --------- -------------
-        **[subject]**                                integer             30  0.00 %   Observations of 30 subjects            
+----------------------------------------------------------------------------------------
+Label   Variable                            Class       # unique  Missing  Description  
+                                                          values                        
+------- ----------------------------------- --------- ---------- --------- -------------
+        **[subject]**                       integer           30  0.00 %                
 
-        **[activity]**                               character            6  0.00 %   Activities performed by each subject during which observations were made.
-        
-        **[tBodyAcc.mean...X]**                      numeric            180  0.00 %                
+        **[activity]**                      factor             6  0.00 %                
 
-        **[tBodyAcc.mean...Y]**                      numeric            180  0.00 %                
+        **[tBodyAcc.mean...X]**             numeric          180  0.00 %                
 
-        **[tBodyAcc.mean...Z]**                      numeric            180  0.00 %                
+        **[tBodyAcc.mean...Y]**             numeric          180  0.00 %                
 
-        **[tGravityAcc.mean...X]**                   numeric            180  0.00 %                
+        **[tBodyAcc.mean...Z]**             numeric          180  0.00 %                
 
-        **[tGravityAcc.mean...Y]**                   numeric            180  0.00 %                
+        **[tGravityAcc.mean...X]**          numeric          180  0.00 %                
 
-        **[tGravityAcc.mean...Z]**                   numeric            180  0.00 %                
+        **[tGravityAcc.mean...Y]**          numeric          180  0.00 %                
 
-        **[tBodyAccJerk.mean...X]**                  numeric            180  0.00 %                
+        **[tGravityAcc.mean...Z]**          numeric          180  0.00 %                
 
-        **[tBodyAccJerk.mean...Y]**                  numeric            180  0.00 %                
+        **[tBodyAccJerk.mean...X]**         numeric          180  0.00 %                
 
-        **[tBodyAccJerk.mean...Z]**                  numeric            180  0.00 %                
+        **[tBodyAccJerk.mean...Y]**         numeric          180  0.00 %                
 
-        **[tBodyGyro.mean...X]**                     numeric            180  0.00 %                
+        **[tBodyAccJerk.mean...Z]**         numeric          180  0.00 %                
 
-        **[tBodyGyro.mean...Y]**                     numeric            180  0.00 %                
+        **[tBodyGyro.mean...X]**            numeric          180  0.00 %                
 
-        **[tBodyGyro.mean...Z]**                     numeric            180  0.00 %                
+        **[tBodyGyro.mean...Y]**            numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.mean...X]**                 numeric            180  0.00 %                
+        **[tBodyGyro.mean...Z]**            numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.mean...Y]**                 numeric            180  0.00 %                
+        **[tBodyGyroJerk.mean...X]**        numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.mean...Z]**                 numeric            180  0.00 %                
+        **[tBodyGyroJerk.mean...Y]**        numeric          180  0.00 %                
 
-        **[tBodyAccMag.mean..]**                     numeric            180  0.00 %                
+        **[tBodyGyroJerk.mean...Z]**        numeric          180  0.00 %                
 
-        **[tGravityAccMag.mean..]**                  numeric            180  0.00 %                
+        **[tBodyAccMag.mean..]**            numeric          180  0.00 %                
 
-        **[tBodyAccJerkMag.mean..]**                 numeric            180  0.00 %                
+        **[tGravityAccMag.mean..]**         numeric          180  0.00 %                
 
-        **[tBodyGyroMag.mean..]**                    numeric            180  0.00 %                
+        **[tBodyAccJerkMag.mean..]**        numeric          180  0.00 %                
 
-        **[tBodyGyroJerkMag.mean..]**                numeric            180  0.00 %                
+        **[tBodyGyroMag.mean..]**           numeric          180  0.00 %                
 
-        **[fBodyAcc.mean...X]**                      numeric            180  0.00 %                
+        **[tBodyGyroJerkMag.mean..]**       numeric          180  0.00 %                
 
-        **[fBodyAcc.mean...Y]**                      numeric            180  0.00 %                
+        **[fBodyAcc.mean...X]**             numeric          180  0.00 %                
 
-        **[fBodyAcc.mean...Z]**                      numeric            180  0.00 %                
+        **[fBodyAcc.mean...Y]**             numeric          180  0.00 %                
 
-        **[fBodyAccJerk.mean...X]**                  numeric            180  0.00 %                
+        **[fBodyAcc.mean...Z]**             numeric          180  0.00 %                
 
-        **[fBodyAccJerk.mean...Y]**                  numeric            180  0.00 %                
+        **[fBodyAccJerk.mean...X]**         numeric          180  0.00 %                
 
-        **[fBodyAccJerk.mean...Z]**                  numeric            180  0.00 %                
+        **[fBodyAccJerk.mean...Y]**         numeric          180  0.00 %                
 
-        **[fBodyGyro.mean...X]**                     numeric            180  0.00 %                
+        **[fBodyAccJerk.mean...Z]**         numeric          180  0.00 %                
 
-        **[fBodyGyro.mean...Y]**                     numeric            180  0.00 %                
+        **[fBodyGyro.mean...X]**            numeric          180  0.00 %                
 
-        **[fBodyGyro.mean...Z]**                     numeric            180  0.00 %                
+        **[fBodyGyro.mean...Y]**            numeric          180  0.00 %                
 
-        **[fBodyAccMag.mean..]**                     numeric            180  0.00 %                
+        **[fBodyGyro.mean...Z]**            numeric          180  0.00 %                
 
-        **[fBodyBodyAccJerkMag.mean..]**             numeric            180  0.00 %                
+        **[fBodyAccMag.mean..]**            numeric          180  0.00 %                
 
-        **[fBodyBodyGyroMag.mean..]**                numeric            180  0.00 %                
+        **[fBodyBodyAccJerkMag.mean..]**    numeric          180  0.00 %                
 
-        **[fBodyBodyGyroJerkMag.mean..]**            numeric            180  0.00 %                
+        **[fBodyBodyGyroMag.mean..]**       numeric          180  0.00 %                
 
-        **[angle.tBodyAccMean.gravity.]**            numeric            180  0.00 %                
+        **[fBodyBodyGyroJerkMag.mean..]**   numeric          180  0.00 %                
 
-        **[angle.tBodyAccJerkMean..gravityMean.]**   numeric            180  0.00 %                
+        **[tBodyAcc.std...X]**              numeric          180  0.00 %                
 
-        **[angle.tBodyGyroMean.gravityMean.]**       numeric            180  0.00 %                
+        **[tBodyAcc.std...Y]**              numeric          180  0.00 %                
 
-        **[angle.tBodyGyroJerkMean.gravityMean.]**   numeric            180  0.00 %                
+        **[tBodyAcc.std...Z]**              numeric          180  0.00 %                
 
-        **[angle.X.gravityMean.]**                   numeric            180  0.00 %                
+        **[tGravityAcc.std...X]**           numeric          180  0.00 %                
 
-        **[angle.Y.gravityMean.]**                   numeric            180  0.00 %                
+        **[tGravityAcc.std...Y]**           numeric          180  0.00 %                
 
-        **[angle.Z.gravityMean.]**                   numeric            180  0.00 %                
+        **[tGravityAcc.std...Z]**           numeric          180  0.00 %                
 
-        **[tBodyAcc.std...X]**                       numeric            180  0.00 %                
+        **[tBodyAccJerk.std...X]**          numeric          180  0.00 %                
 
-        **[tBodyAcc.std...Y]**                       numeric            180  0.00 %                
+        **[tBodyAccJerk.std...Y]**          numeric          180  0.00 %                
 
-        **[tBodyAcc.std...Z]**                       numeric            180  0.00 %                
+        **[tBodyAccJerk.std...Z]**          numeric          180  0.00 %                
 
-        **[tGravityAcc.std...X]**                    numeric            180  0.00 %                
+        **[tBodyGyro.std...X]**             numeric          180  0.00 %                
 
-        **[tGravityAcc.std...Y]**                    numeric            180  0.00 %                
+        **[tBodyGyro.std...Y]**             numeric          180  0.00 %                
 
-        **[tGravityAcc.std...Z]**                    numeric            180  0.00 %                
+        **[tBodyGyro.std...Z]**             numeric          180  0.00 %                
 
-        **[tBodyAccJerk.std...X]**                   numeric            180  0.00 %                
+        **[tBodyGyroJerk.std...X]**         numeric          180  0.00 %                
 
-        **[tBodyAccJerk.std...Y]**                   numeric            180  0.00 %                
+        **[tBodyGyroJerk.std...Y]**         numeric          180  0.00 %                
 
-        **[tBodyAccJerk.std...Z]**                   numeric            180  0.00 %                
+        **[tBodyGyroJerk.std...Z]**         numeric          180  0.00 %                
 
-        **[tBodyGyro.std...X]**                      numeric            180  0.00 %                
+        **[tBodyAccMag.std..]**             numeric          180  0.00 %                
 
-        **[tBodyGyro.std...Y]**                      numeric            180  0.00 %                
+        **[tGravityAccMag.std..]**          numeric          180  0.00 %                
 
-        **[tBodyGyro.std...Z]**                      numeric            180  0.00 %                
+        **[tBodyAccJerkMag.std..]**         numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.std...X]**                  numeric            180  0.00 %                
+        **[tBodyGyroMag.std..]**            numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.std...Y]**                  numeric            180  0.00 %                
+        **[tBodyGyroJerkMag.std..]**        numeric          180  0.00 %                
 
-        **[tBodyGyroJerk.std...Z]**                  numeric            180  0.00 %                
+        **[fBodyAcc.std...X]**              numeric          180  0.00 %                
 
-        **[tBodyAccMag.std..]**                      numeric            180  0.00 %                
+        **[fBodyAcc.std...Y]**              numeric          180  0.00 %                
 
-        **[tGravityAccMag.std..]**                   numeric            180  0.00 %                
+        **[fBodyAcc.std...Z]**              numeric          180  0.00 %                
 
-        **[tBodyAccJerkMag.std..]**                  numeric            180  0.00 %                
+        **[fBodyAccJerk.std...X]**          numeric          180  0.00 %                
 
-        **[tBodyGyroMag.std..]**                     numeric            180  0.00 %                
+        **[fBodyAccJerk.std...Y]**          numeric          180  0.00 %                
 
-        **[tBodyGyroJerkMag.std..]**                 numeric            180  0.00 %                
+        **[fBodyAccJerk.std...Z]**          numeric          180  0.00 %                
 
-        **[fBodyAcc.std...X]**                       numeric            180  0.00 %                
+        **[fBodyGyro.std...X]**             numeric          180  0.00 %                
 
-        **[fBodyAcc.std...Y]**                       numeric            180  0.00 %                
+        **[fBodyGyro.std...Y]**             numeric          180  0.00 %                
 
-        **[fBodyAcc.std...Z]**                       numeric            180  0.00 %                
+        **[fBodyGyro.std...Z]**             numeric          180  0.00 %                
 
-        **[fBodyAccJerk.std...X]**                   numeric            180  0.00 %                
+        **[fBodyAccMag.std..]**             numeric          180  0.00 %                
 
-        **[fBodyAccJerk.std...Y]**                   numeric            180  0.00 %                
+        **[fBodyBodyAccJerkMag.std..]**     numeric          180  0.00 %                
 
-        **[fBodyAccJerk.std...Z]**                   numeric            180  0.00 %                
+        **[fBodyBodyGyroMag.std..]**        numeric          180  0.00 %                
 
-        **[fBodyGyro.std...X]**                      numeric            180  0.00 %                
-
-        **[fBodyGyro.std...Y]**                      numeric            180  0.00 %                
-
-        **[fBodyGyro.std...Z]**                      numeric            180  0.00 %                
-
-        **[fBodyAccMag.std..]**                      numeric            180  0.00 %                
-
-        **[fBodyBodyAccJerkMag.std..]**              numeric            180  0.00 %                
-
-        **[fBodyBodyGyroMag.std..]**                 numeric            180  0.00 %                
-
-        **[fBodyBodyGyroJerkMag.std..]**             numeric            180  0.00 %                
----------------------------------------------------------------------------------------------------
+        **[fBodyBodyGyroJerkMag.std..]**    numeric          180  0.00 %                
+----------------------------------------------------------------------------------------
 
 
 
@@ -266,17 +254,17 @@ Min. and max.                 1; 30
 ## activity
 
 
--------------------------------------
-Feature                        Result
-------------------------- -----------
-Variable type               character
+------------------------------------
+Feature                       Result
+------------------------- ----------
+Variable type                 factor
 
-Number of missing obs.        0 (0 %)
+Number of missing obs.       0 (0 %)
 
-Number of unique values             6
+Number of unique values            6
 
-Mode                         "laying"
--------------------------------------
+Mode                        "laying"
+------------------------------------
 
 
 
@@ -1075,174 +1063,6 @@ Min. and max.                   -1; 0.15
 
 \fullline
 
-## angle.tBodyAccMean.gravity.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                             0.01
-
-1st and 3rd quartiles       -0.01; 0.02
-
-Min. and max.               -0.16; 0.13
----------------------------------------
-
-
-
-
-\fullline
-
-## angle.tBodyAccJerkMean..gravityMean.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                                0
-
-1st and 3rd quartiles       -0.02; 0.02
-
-Min. and max.                -0.12; 0.2
----------------------------------------
-
-
-
-
-\fullline
-
-## angle.tBodyGyroMean.gravityMean.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                             0.02
-
-1st and 3rd quartiles       -0.02; 0.06
-
-Min. and max.               -0.39; 0.44
----------------------------------------
-
-
-
-
-\fullline
-
-## angle.tBodyGyroJerkMean.gravityMean.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                            -0.02
-
-1st and 3rd quartiles       -0.06; 0.03
-
-Min. and max.               -0.22; 0.18
----------------------------------------
-
-
-
-
-\fullline
-
-## angle.X.gravityMean.
-
-
-----------------------------------------
-Feature                           Result
-------------------------- --------------
-Variable type                    numeric
-
-Number of missing obs.           0 (0 %)
-
-Number of unique values              180
-
-Median                             -0.74
-
-1st and 3rd quartiles       -0.79; -0.58
-
-Min. and max.                -0.95; 0.74
-----------------------------------------
-
-
-
-
-\fullline
-
-## angle.Y.gravityMean.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                             0.17
-
-1st and 3rd quartiles        0.02; 0.24
-
-Min. and max.               -0.87; 0.42
----------------------------------------
-
-
-
-
-\fullline
-
-## angle.Z.gravityMean.
-
-
----------------------------------------
-Feature                          Result
-------------------------- -------------
-Variable type                   numeric
-
-Number of missing obs.          0 (0 %)
-
-Number of unique values             180
-
-Median                             0.01
-
-1st and 3rd quartiles       -0.08; 0.11
-
-Min. and max.               -0.87; 0.39
----------------------------------------
-
-
-
-
-\fullline
-
 ## tBodyAcc.std...X
 
 
@@ -2031,16 +1851,7 @@ Min. and max.                   -1; 0.29
 ----------------------------------------
 
 
-For more information about this dataset contact: activityrecognition@smartlab.ws
 
-License:
-========
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-
-This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
-
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
-
+\fullline
 
