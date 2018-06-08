@@ -13,7 +13,7 @@ The included dataset "df2.txt" uses data from the UCI HAR Dataset as part of the
 Getting and Cleaning Data Course Project. The table can be read into R by 
 executing the following code:
 
-df2 <- read.table("df2.txt", header = TRUE) 
+df2 <- read.table("url", header = TRUE) 
 View(df2)
 
 The dataset was created from the UCI HAR Dataset using the script:
@@ -30,4 +30,4 @@ replaced with descriptive activity titles.
 From this organized dataset, a second dataset "df2.txt" was created by first 
 melting the dataset by subject and activity. The dataset was then recast
 including the mean of each variable by each subject and activity. Such that 
-there were then 180 (30 subjects * 6 activities) observations of 75 variables. 
+there were then 180 (30 subjects * 6 activities) observations of 66 variables. 
