@@ -13,8 +13,8 @@ The included dataset "df2.txt" uses data from the UCI HAR Dataset as part of the
 Getting and Cleaning Data Course Project. The table can be read into R by 
 executing the following code:
 
-df2 <- read.table("https://s3.amazonaws.com/coursera-uploads/peer-review/3646606c0d391c8250c1d726235e6c2f/df2.txt", header = TRUE) 
-View(df2)
+        df2 <- read.table("https://s3.amazonaws.com/coursera-uploads/peer-review/3646606c0d391c8250c1d726235e6c2f/df2.txt", header = TRUE) 
+                View(df2)
 
 The dataset was created from the UCI HAR Dataset using the script:
 "run_analysis.R" included in the github repository. 
